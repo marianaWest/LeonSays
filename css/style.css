@@ -32,7 +32,6 @@ h1, h2, h3 {
 
 .userInput {
   text-align: center;
-  margin-top: 20px;
 }
 
 
@@ -45,25 +44,28 @@ button {
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
   font-size: 4rem;
   display: inline-block;
-  margin-bottom: 10px; 
-  padding-top: 30px;
+  margin-bottom: 0; 
+  padding-top: 1.5rem;
   color: white;
 }
 
 #leon-speaks {
   font-size: 3rem;
   position: absolute;
-  top: 30%;
-  left: 50%;
+  top: 35%;
+  left: 45%;
   transform: translate(-50%, -50%);
   color: black;
   max-width: 25vw;
+  margin-top: 0;
+  padding-top: 0;
 }
 
-.speech-bubble {
+.speech-bubble-vertical {
   display: block;
   margin: 0 auto;
   max-width: 34vw;
+  padding: 0;
 }
 
 .leon-logo {
@@ -85,49 +87,95 @@ h1 {
 }
 
 .leon-logo {
-  max-width: 90vw;
+  max-width: 70vw;
+  margin: 0 auto;
 }
 
-.speech-bubble {
+.speech-bubble-vertical {
   max-width: 100%;
 }
 
+.speech-bubble-horizontal {
+  display: none;
+}
+
 #leon-speaks {
-  max-width: 85vw;
+  max-width: 90vw;
+  position: absolute;
+  top: 40%;
+  left: 50%;
 }
 
 button {
   font-size: 3.6rem;
-  margin-bottom: 20px;
   display: block;
   max-width: 100%;
-  padding: 0;
+  padding-top: 20px;
   margin: 0 auto;
 }
 }
 
 @media (min-width: 501px) and (max-width: 912px) {
+  
+  .userInput {
+    margin: 0;
+    padding: 0;
+  }
    
   .leon-logo {
     max-width: 80vw;
+    margin: 0 auto;
   }
   
-  .speech-bubble {
+  .speech-bubble-vertical {
     max-width: 80vw;
+    margin: 0 auto;
+  }
+
+  .speech-bubble-horizontal {
+    display: none;
   }
   
   #leon-speaks {
     max-width: 90vw;
     font-size: 4rem;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
   }
   
   button {
     font-size: 5rem;
-    margin: 10% auto;
+    margin: 0 auto;
+    padding-top: 5%;
     display: block;
     max-width: 100%;
-    padding: 0;
-    /* margin: 0 auto; */
+   }
   }
+
+  @media (min-width: 913px) {
+    body {
+      max-height: 100vh;
+    }
+    .leon-logo {
+      margin-left: 10vw;
+      margin-top: 2vh; 
+      }
+    .speech-bubble-vertical {
+      display: none;
+    }
+    .speech-bubble-horizontal {
+      max-width: 40vw;
+    }
+    .baloon {
+      display: inline-block;
+      margin-right: 10vw;
+      margin-top: 15vh;
+      float: right;
+    }
+    button {
+      display: inline;
+    }
   }
 
