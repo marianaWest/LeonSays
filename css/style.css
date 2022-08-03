@@ -1,9 +1,3 @@
-/******************************************
-/* CSS
-/*******************************************/
-
-
-/* Box Model Hack */
 *{
   box-sizing: border-box;
 }
@@ -27,6 +21,14 @@ h1, h2, h3 {
   padding-top: 0;
   margin-top: 0;
   position: relative;
+  text-align: center;
+}
+
+span {
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  color: white;
+  font-size: 1.8rem;
+  display: block;
   text-align: center;
 }
 
@@ -66,6 +68,7 @@ button {
   margin: 0 auto;
   max-width: 34vw;
   padding: 0;
+ 
 }
 
 .leon-logo {
@@ -75,8 +78,6 @@ button {
 }
 
  
-
-
 /******************************************
 /* ADDITIONAL STYLES
 /*******************************************/
@@ -97,6 +98,10 @@ h1 {
 
 .speech-bubble-horizontal {
   display: none;
+}
+
+span {
+   font-size: 1.2rem;
 }
 
 #leon-speaks {
@@ -144,6 +149,10 @@ button {
     left: 50%;
     transform: translate(-50%, -50%);
   }
+
+  span {
+    font-size: 1.2rem;
+ }
   
   button {
     font-size: 5rem;
@@ -167,15 +176,24 @@ button {
     }
     .speech-bubble-horizontal {
       max-width: 40vw;
+      
     }
+
     .baloon {
       display: inline-block;
       margin-right: 10vw;
       margin-top: 15vh;
       float: right;
+      height: 45vh;
     }
     button {
       display: inline;
+    }
+
+    span {
+      display: inline-block;
+      width: 75vw;
+      text-align: left;
     }
   }
 
